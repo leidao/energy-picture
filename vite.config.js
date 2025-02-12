@@ -42,6 +42,10 @@ export default defineConfig({
       clientFiles: ["./src/layouts/**/*.vue"],
     },
   },
+  build: {
+    outDir: "docs",
+  },
+  base: "/energy-picture",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
